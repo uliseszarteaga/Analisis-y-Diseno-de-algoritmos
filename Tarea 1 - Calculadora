@@ -1,0 +1,47 @@
+#Calculadora en Python.
+#By: Jorge Ulises Zapata Arteaga.
+#Analisis y Diseño de Algoritmos 3CM2
+
+import time
+
+inicio = time.time()
+print('----------------------------------')
+print('Elija la opción que desea utilizar:')
+print('1. Suma de dos números')
+print('2. Resta de dos números')
+print('3. Multiplicación de dos números')
+print('4. División de dos números')
+print('5. Salir')
+print('----------------------------------')
+
+opc = int(input('Ingrese la opcion de operacion: '))
+
+if opc==1:
+    print('1. Suma de dos números')
+    num1 = input('Ingrese primer numero: ')
+    num2 = input('Ingrese segundo numero: ')
+    resultado1 = float(num1) + float(num2)
+    print('El resultado de la suma es: ', resultado1)
+if opc==2:
+    print('2. Resta de dos números')
+    num1 = input('Ingrese primer numero: ')
+    num2 = input('Ingrese segundo numero: ')
+    resultado2 = float(num1) - float (num2)
+    print('El resultado de la resta es: ', resultado2)
+if opc == 3:
+    print('3. Multiplicación de dos números')
+    num1 = input('Ingrese primer numero: ')
+    num2 = input('Ingrese segundo numero: ')
+    resultado3 = float(num1) * float (num2)
+    print('El resultado de la multiplicacion es: ', resultado3)
+if opc == 4:
+    print('4. División de dos números')
+    num1 = input('Ingrese primer numero: ')
+    num2 = input('Ingrese segundo numero: ')
+    resultado4 = float(num1) / float (num2)
+    print('El resultado de la division es: ', resultado4)
+if opc == 5:
+    print('Nos vemos, aqui termina esto.')
+fin = time.time()
+tiempo_resultante=fin - inicio
+print('Tiempo ejecutado', tiempo_resultante)
