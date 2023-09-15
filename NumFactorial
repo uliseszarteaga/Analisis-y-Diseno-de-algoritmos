@@ -1,0 +1,12 @@
+#Factorial en Python.
+#By: Jorge Ulises Zapata Arteaga.
+#Analisis y Diseño de Algoritmos 3CM2
+
+n=int(input('Ingrese el número a sacar el factorial: ')) 
+
+def factos(n):
+    num_mult = 1
+    for i in range(1, n+1):
+        num_mult = num_mult*i
+    return print('El factorial es:', num_mult)
+print(factos(n)) 
