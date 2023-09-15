@@ -1,0 +1,9 @@
+#Fibonacci en Python.
+#By: Jorge Ulises Zapata Arteaga.
+#Analisis y Diseño de Algoritmos 3CM2
+
+n = int(input("Ingrese la posición del numero de la serie Fibonacci que desea encontrar: "))
+fib = [0, 1] #Lista con los primeros dos números de la serie.
+for i in range(2, n+1):
+    fib.append(fib[i-1] + fib[i-2]) #Append sirve para ingresar un dato al final de la lista.
+print("El número de la serie Fibonacci que busca en la posición ", n, "es:", fib[n])
