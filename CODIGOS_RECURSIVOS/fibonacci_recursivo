@@ -1,0 +1,15 @@
+#Fibonacci recursivo en Python.
+#By: Jorge Ulises Zapata Arteaga.
+#Analisis y Diseño de Algoritmos.3CM2.
+
+n = int(input("Ingrese la posición del numero de la serie Fibonacci que desea encontrar: "))
+def fibonacci(n):
+    if(n<=1):
+        return n
+    else:
+        return fibonacci(n-2)+fibonacci(n-1)
+        
+muestra = fibonacci(n)
+print("El numero en la posicion es: ", muestra)
+
+
