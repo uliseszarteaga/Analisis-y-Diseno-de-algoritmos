@@ -1,0 +1,21 @@
+#Código Torres de Hanoi usando arreglos en python
+#By: Jorge Ulises Zapata Arteaga.
+#Analisis y Diseño de Algoritmos. 3CM2.
+
+n = int(input("Ingrese el numero de discos: "))
+
+origen = [i for i in range(1, n+1)]
+auxiliar = []
+destino = []
+
+def hanoi(n, origen, auxiliar, destino):
+    if n == 1:
+        destino.append(origen.pop())
+        print("Mover disco de", origen, "a", destino)
+    else:
+        hanoi(n - 1, origen, destino, auxiliar)
+        destino.append(origen.pop())
+        print("Mover disco de", origen, "a", destino)
+        hanoi(n - 1, auxiliar, origen, destino)
+
+hanoi(n, origen, auxiliar, destino)
