@@ -1,0 +1,14 @@
+#Código Torres de Hanoi usando prints en python
+#By: Jorge Ulises Zapata Arteaga.
+#Analisis y Diseño de Algoritmos. 3CM2.
+
+n = int(input("Ingrese el número de discos: "))
+def hanoi(n, origen, auxiliar, destino):
+    if n == 1:
+        print("Mover disco de", origen, "a", destino) #Caso base.
+    else:
+        hanoi(n-1, origen, destino, auxiliar) #Caso general.
+        print("Mover disco de", origen, "a", destino)
+        hanoi(n-1, auxiliar, origen, destino)
+
+hanoi(n, 'A', 'B', 'C')
