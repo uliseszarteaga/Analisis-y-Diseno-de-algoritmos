@@ -14,12 +14,12 @@ for i in range(0, num):
     lista.append(n) #Instruccion para llenar la listacon los elementos que ingrese el usuario.
 
 print('Lista antes de ordenar: ')
-for i in lista:
+for i in lista: #Recorre la lista.
     print(i, end=' ') #Impresion de la lista antes de ordenar.
 
 print('\nLista después de ordenar utilizando burbuja simple recursiva: ')
 muestra_burbuja = burbujaRecursiva(lista, num)
-for i in muestra_burbuja:
+for i in muestra_burbuja: #Recorre la lista almacenada en muestra_burbuja.
     print(i, end=' ') #Muestra en consola de la lista ordenada recursivamente, 
     #recorriendo la lista (utilizamos una variable para almacenar los valores
     # de la lista ya ordenados) que está almacenada en muestra_burbuja, mostrando
