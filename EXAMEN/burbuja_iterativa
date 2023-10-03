@@ -1,15 +1,15 @@
 #Còdigo de burbuja iterativa
 print('ESTAS USANDO ORDENAMIENTO BURBUJA SIMPLE ITERATIVA.')
 
-num = int(input('Elija el tamaño de la lista de números a ordenar: '))
-lista = []
+num = int(input('Elija el tamaño de la lista de números a ordenar: ')) #Ingresa el numero de elementos de la lista.
+lista = [] #Lista vacia, para llenarla
 for i in range(0, num):
-    n = int(input('Número a ingresar:'))
-    lista.append(n)
+    n = int(input('Número a ingresar:')) #Ingresa el numero que vas a meter a la lista
+    lista.append(n) #Instruccion para llenar la lista.
 
 print('Lista antes de ordenar: ')
-for i in lista:
-    print(i, end=' ')
+for i in lista: #Recorre la lista.
+    print(i, end=' ') #Impresion de la lista.
     # Algoritmo de ordenamiento de burbuja simple
     for j in range(0, num - 1):
         for i in range(0, num - 1):
@@ -20,6 +20,6 @@ for i in lista:
 
 print('\nLista después de ordenar utilizando burbuja simple iterativa: ')
     
-for i in lista:
-    print(i, end=' ')
-print(end=' ')
+for i in lista: #Recorre la lista
+    print(i, end=' ') #Muestra en consola de la lista ya ordenada.
+print(end=' ') #
