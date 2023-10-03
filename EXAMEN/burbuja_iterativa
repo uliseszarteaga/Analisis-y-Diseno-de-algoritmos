@@ -1,0 +1,25 @@
+#Còdigo de burbuja iterativa
+print('ESTAS USANDO ORDENAMIENTO BURBUJA SIMPLE ITERATIVA.')
+
+num = int(input('Elija el tamaño de la lista de números a ordenar: '))
+lista = []
+for i in range(0, num):
+    n = int(input('Número a ingresar:'))
+    lista.append(n)
+
+print('Lista antes de ordenar: ')
+for i in lista:
+    print(i, end=' ')
+    # Algoritmo de ordenamiento de burbuja simple
+    for j in range(0, num - 1):
+        for i in range(0, num - 1):
+            if lista[i] > lista[i + 1]:
+                aux = lista[i]
+                lista[i] = lista[i + 1]
+                lista[i + 1] = aux
+
+print('\nLista después de ordenar utilizando burbuja simple iterativa: ')
+    
+for i in lista:
+    print(i, end=' ')
+print(end=' ')
