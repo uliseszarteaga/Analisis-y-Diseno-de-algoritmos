@@ -1,0 +1,26 @@
+def burbujaRecursiva(lista, n): #Definimos la función.
+    if n == 1: #Caso base.
+        return lista #Retorna el único valor de la lsita
+    for i in range(n - 1):
+        if lista[i] > lista[i + 1]: #Condicion de: si el numero actual es mayor al de la siguiente posición
+            lista[i], lista[i + 1] = lista[i + 1], lista[i] #Intercambiamos posiciones
+    burbujaRecursiva(lista, n - 1) #Llamamos la función.
+    return lista #Una vez que esté ordenada, la muestra.
+
+num = int(input('Elija el tamaño de la lista de números a ordenar: ')) #Ingresa el numero de elementos de la lista.
+lista = [] #Lista vacia, para llenarla.
+for i in range(0, num):
+    n = int(input('Número a ingresar:'))
+    lista.append(n) #Instruccion para llenar la listacon los elementos que ingrese el usuario.
+
+print('Lista antes de ordenar: ')
+for i in lista:
+    print(i, end=' ') #Impresion de la lista antes de ordenar.
+
+print('\nLista después de ordenar utilizando burbuja simple recursiva: ')
+muestra_burbuja = burbujaRecursiva(lista, num)
+for i in muestra_burbuja:
+    print(i, end=' ') #Muestra en consola de la lista ordenada recursivamente, 
+    #recorriendo la lista (utilizamos una variable para almacenar los valores
+    # de la lista ya ordenados) que está almacenada en muestra_burbuja, mostrando
+    # los elementos.
