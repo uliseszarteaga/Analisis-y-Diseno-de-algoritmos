@@ -1,3 +1,7 @@
+#Ordenamiento QuickSort.
+#By: Jorge Ulises Zapata Arteaga.
+#Análisis y Diseño de Algoritmos. 3CM2.
+
 import random
 import numpy as np
 import matplotlib.pyplot as plt
