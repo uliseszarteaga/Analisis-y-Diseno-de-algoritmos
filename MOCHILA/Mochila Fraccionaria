@@ -60,7 +60,7 @@ if __name__ == "__main__":
     print(f"La capacidad es {capacidad} y los objetos son: {objetos} ")
     print(f"El total de objetos es {total_objetos} y la mochila es{mochila}")
     
-    n_items_range = range(1, 1001, 50)  # Puedes ajustar el rango según tus necesidades
+    n_items_range = range(1, 1001, 50)  
     graficar_tiempos(n_items_range)
   
    
