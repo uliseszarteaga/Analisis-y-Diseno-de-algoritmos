@@ -74,7 +74,7 @@ def es_tablero_valido(tablero):
     return True
 
 if __name__ == "__main__":
-    inicio = time.time() #Medimos el tiempo de ejecución
+    inicio = time.time() 
 
     while soluciones < 100:  
         tablero = min_conflicts()
