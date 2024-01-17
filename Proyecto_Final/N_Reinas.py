@@ -58,7 +58,6 @@ def encontrar_soluciones(tablero, fila):
 if __name__ == "__main__":
     tablero = [[0] * N for _ in range(N)]
     
-    # Medir el tiempo de ejecución y almacenar los tiempos
     inicio_global = time.time()
     encontrar_soluciones(tablero, 0)
     fin_global = time.time()
@@ -68,10 +67,8 @@ if __name__ == "__main__":
     else:
         print("Se encontraron", soluciones, "soluciones.")
     
-    # Imprimir el tiempo de ejecución global
     print("Tiempo de ejecución global:", fin_global - inicio_global, "segundos")
 
-    # Graficar los tiempos de ejecución por solución
     plt.plot(range(1, soluciones + 1), tiempos_por_solucion[:soluciones], marker='o')
     plt.title('Tiempos de ejecución por solución')
     plt.xlabel('Número de solución')
