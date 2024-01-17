@@ -67,12 +67,10 @@ if __name__ == "__main__":
     else:
         print("Se encontraron", soluciones, "soluciones.")
         
-    # Imprimir el tiempo total de ejecución
     end_time = time.time()
     total_time = end_time - encontrar_soluciones_con_poda.start_time
     print("Tiempo total de ejecución:", total_time, "segundos")
 
-    # Graficar el tiempo de ejecución
     plt.plot(range(1, soluciones + 1), tiempos, marker='o')
     plt.xlabel('Número de Soluciones Encontradas')
     plt.ylabel('Tiempo de Ejecución en segundos')
